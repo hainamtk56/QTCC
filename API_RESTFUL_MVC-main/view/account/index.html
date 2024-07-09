@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sách tài khoản</h1>
+        <div id="searchBox" class="search-box">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên đăng nhập">
+                <button type="button" id="searchBtn">Tìm kiếm</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <form id="accountForm">
+                <input type="hidden" id="accountId">
+                <div class="account-items">
+                    <div class="form-item">
+                        <label for="userInput">Tên đăng nhập:</label>
+                        <input type="text" id="userInput" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="form-item">
+                        <label for="passInput">Mật khẩu:</label>
+                        <input type="text" id="passInput" placeholder="Mật khẩu">
+                    </div>
+                    <div class="form-item">
+                        <label for="typeInput">Loại tài khoản:</label>
+                        <select id="typeInput">
+                            <option value="student">Student Account</option>
+                            <option value="admin">Admin Account</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-form" id="actionButtons">
+                    <button type="button" id="addBtn" class="btn-them"><b>Thêm</b></button>
+                    <button type="button" id="updateBtn" class="btn-xacnhan"><b>Xác nhận</b></button>
+                    <button type="button" id="cancelBtn" class="btn-huy"><b>Hủy</b></button>
+
+                </div>
+            </form>
+        </div>
+
+        <table id="accountTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên Đăng Nhập</th>
+                    <th>Mật Khẩu</th>
+                    <th>Tên Loại Tài Khoản</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="accountTableBody">
+
+            </tbody>
+        </table>
+    </div>
+    <script text="JavaScript" src="script.js"></script>
+</body>
+
+</html>

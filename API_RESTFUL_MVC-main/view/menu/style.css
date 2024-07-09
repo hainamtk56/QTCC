@@ -1,0 +1,75 @@
+/* CSS cho container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Canh giữa trang */
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao của toàn bộ màn hình */
+    margin: 0;
+}
+
+/* CSS cho khung chứa */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Canh đỉnh */
+    background-color: #f8f9fa; /* Màu nền */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 0 10px rgba(213, 21, 21, 0.1); /* Hiệu ứng bóng */
+    padding: 20px; /* Khoảng cách từ nội dung đến viền khung */
+    max-width: 1000px; /* Độ rộng tối đa của khung */
+    margin: 0 auto; /* Đưa khung ra giữa màn hình ngang */
+}
+/* CSS cho phần nội dung */
+.content {
+    text-align: left; /* Canh trái */
+    margin-left: 20px; /* Khoảng cách giữa hình ảnh và nội dung */
+}
+
+
+/* CSS cho logo */
+.logo {
+    width: 550px; /* Độ rộng của hình ảnh */
+    height: 550px;
+}
+
+/* CSS cho tiêu đề */
+.content h2 {
+    font-size: 32px; /* Kích thước của tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+/* CSS cho sidebar */
+.sidebar {
+    font-size: 24px; /* Kích thước của sidebar */
+    margin-left: 30px; /* Khoảng cách giữa hình ảnh và nội dung */
+}
+
+/* CSS cho danh sách menu */
+.sidebar ul {
+    list-style-type: none; /* Loại bỏ bullet points */
+    padding: 0;
+}
+
+/* CSS cho mỗi mục trong danh sách menu */
+.sidebar ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+/* CSS cho các liên kết trong danh sách menu */
+.sidebar ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu chữ */
+}
+
+/* CSS cho hover state của các liên kết */
+.sidebar ul li a:hover {
+    color: #007bff; /* Màu chữ khi hover */
+}

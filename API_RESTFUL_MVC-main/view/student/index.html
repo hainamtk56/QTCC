@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Ô tìm kiếm -->
+    <div id="tableHeader">
+        <h1>QUẢN LÝ SINH VIÊN KÝ TÚC XÁ</h1>
+    </div>
+    <div id="searchBox" class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search masv or name">
+        <button type="button" id="searchBtn" class="search-button">Search</button>
+    </div>
+
+    <div id="student-Table">
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Mã SV</th>
+                    <th>Họ tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Giới tính</th>
+                    <th>Địa chỉ</th>
+                    <th>SDT</th>
+                    <th>Mail</th>
+                    <th>Mã phòng</th>
+                    <th>Tên Khu</th>
+                    <th>Tên đăng nhập</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Dữ liệu sinh viên sẽ được hiển thị ở đây -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Form hiển thị dữ liệu sinh viên -->
+    <form id="studentForm">
+        <div>
+            <label for="MaSVInput">Mã sinh viên:</label>
+            <input type="text" id="MaSVInput" placeholder="MaSV">
+        </div>
+        <div>
+            <label for="HoTenInput">Họ tên:</label>
+            <input type="text" id="HoTenInput" placeholder="HoTen">
+        </div>
+        <div>
+            <label for="NgaySinhInput">Ngày sinh:</label>
+            <input type="date" id="NgaySinhInput" placeholder="NgaySinh">
+        </div>
+        <div id="gioiTinhDiv">
+            <label for="GioiTinhInput">Giới tính:</label>
+            <select id="GioiTinhInput" name="GioiTinh">
+                <option value="" disabled selected hidden>---Chọn giới tính---</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+        </div>
+        <div>
+            <label for="DiaChiInput">Địa chỉ:</label>
+            <input type="text" id="DiaChiInput" placeholder="DiaChi">
+        </div>
+        <div>
+            <label for="SDTInput">Số điện thoại:</label>
+            <input type="tel" id="SDTInput" placeholder="SDT">
+        </div>
+        <div>
+            <label for="MailInput">Email:</label>
+            <input type="email" id="MailInput" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="MaPhongInput">Mã phòng:</label>
+            <input type="text" id="MaPhongInput" placeholder="MaPhong">
+        </div>
+        <div>
+            <label for="TenKhuInput">Tên Khu:</label>
+            <select id="TenKhuInput">
+                <option value="" disabled selected hidden>---Chọn mã khu---</option>
+                <option value="Khu A">Khu A (Nam)</option>
+                <option value="Khu B">Khu B (Nữ)</option>
+            </select>
+        </div>
+        <div>
+            <label for="user_accountInput">Tên đăng nhập:</label>
+            <input type="text" id="user_accountInput" placeholder="TenDangNhap">
+        </div>
+
+    </form>
+    <!-- Nút chức năng -->
+    <div id="actionButtons">
+        <button type="button" id="addBtn">Add</button>
+        <button type="button" id="editBtn">Edit</button>
+        <button type="button" id="updateBtn">Update</button>
+        <button type="button" id="deleteBtn">Delete</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+    </div>
+
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

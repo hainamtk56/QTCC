@@ -1,0 +1,101 @@
+
+#tableHeader{
+    text-align: center;
+    background-color: orange;
+    padding: 5px;
+    color: white;
+}
+/* Style cho ô tìm kiếm */
+#searchBox {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    padding: 8px;
+    width: 200px;
+}
+
+#searchBtn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #45a049;
+}
+
+/* Style cho form hiển thị dữ liệu phòng */
+#phongForm {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia form thành 2 cột */
+    grid-gap: 10px; /* Khoảng cách giữa các ô */
+}
+
+#phongForm div {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#phongForm label{
+    display: inline-block;
+    width: 140px;
+}
+
+#phongForm input {
+    padding: 8px;
+    width: 200px;
+}
+#phongForm select{
+    margin: 5px auto;
+    padding: 8px;
+    display: inline;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Style cho nút chức năng */
+#actionButtons {
+    margin-bottom: 20px;
+}
+
+#actionButtons button {
+    padding: 8px 16px;
+    margin-right: 40px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#actionButtons button:hover {
+    background-color: #0077A3;
+}
+
+/* Style cho bảng hiển thị thông tin phòng */
+#phongTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#phongTable th,
+#phongTable td {
+    text-align: center; 
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#phongTable th {
+    background-color: #f2f2f2;
+}
+
+.selected-row {
+    background-color: #f0f0f0; /* Màu nền khác để làm nổi bật */
+}

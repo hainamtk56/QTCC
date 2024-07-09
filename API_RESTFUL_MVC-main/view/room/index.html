@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Phòng</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="tableHeader">
+        <h2>QUẢN LÝ PHÒNG KÝ TÚC XÁ</h2>
+    </div>
+    <!-- Ô tìm kiếm -->
+    <div id="searchBox">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm theo số phòng">
+        <button type="button" id="searchBtn">Search</button>
+    </div>
+ <!-- Form hiển thị dữ liệu phòng -->
+ <form id="phongForm">
+    <div>
+        <label for="MaPhongInput">Số Phòng:</label>
+        <input type="text" id="MaPhongInput" placeholder="-- Nhập số phòng --">
+    </div>
+    <div>
+        <label for="MaKhuInput">Mã Khu:</label>
+        <!-- <input type="text" id="MaKhuInput" placeholder="MaKhu"> -->
+        <select id="MaKhuInput">
+            <option value="" disabled selected hidden>-- Chọn mã khu--</option>
+            <option value="A">A (Nam)</option>
+            <option value="B">B (Nữ)</option>
+        </select>
+    </div> 
+    
+    <div>
+        <label for="SoNguoiToiDaInput">Số Người Tối Đa:</label>
+        <input type="text" id="SoNguoiToiDaInput" placeholder="-- Nhập số người tối đa --">
+    </div>
+    <div>
+        <label for="SoNguoiHienTaiInput">Số Người Hiện Tại:</label>
+        <input type="text" id="SoNguoiHienTaiInput" placeholder="-- Số người hiện tại --"disabled>
+    </div>
+    <div>
+        <label for="GiaInput">Giá:</label>
+        <input type="text" id="GiaInput" placeholder="-- Nhập giá phòng --">
+    </div>
+       <!-- Nút chức năng -->
+    <div id="actionButtons">
+    <button type="button" id="addBtn">Add</button>
+    <button type="button" id="updateBtn">Update</button>
+    <button type="button" id="deleteBtn">Delete</button>
+    <button type="button" id="cancelBtn">Cancel</button>
+ </div>
+</form>
+
+    <!-- Bảng hiển thị thông tin phòng -->
+    <table id="phongTable">
+        <thead>
+            <tr>
+                <th>Số Phòng</th>
+                <th>Mã Khu</th>
+                <th>Số Người Tối Đa</th>
+                <th>Số Người Hiện Tại</th>
+                <th>Giá Phòng</th>
+            </tr>
+        </thead>
+        <tbody id="phongTableBody">
+            <!-- Dữ liệu sinh viên sẽ được hiển thị ở đây -->
+        </tbody>
+    </table>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

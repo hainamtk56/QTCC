@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Management</title>
+    <link rel="stylesheet" href="xemphong.css"> <!-- Thay đổi tên file CSS nếu cần -->
+
+    <!-- Font Awesome cho biểu tượng -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Danh Sách Phòng</h1>
+        <!-- Ô tìm kiếm -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Bảng hiển thị thông tin phòng -->
+        <div class="table-container">
+            <table id="phongTable">
+                <thead>
+                    <tr>
+                        <th>Mã Phòng</th>
+                        <th>Mã Khu</th>
+                        <th>Số Người Hiện Tại</th>
+                        <th>Số Người Tối Đa</th>
+                        <th>Giá</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="phongTableBody">
+                    <!-- Dữ liệu phòng sẽ được hiển thị ở đây -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

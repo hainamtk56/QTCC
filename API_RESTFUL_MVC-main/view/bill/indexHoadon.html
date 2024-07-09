@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Hóa đơn</title>
+    <link rel="stylesheet" href="hoadon.css"> 
+</head>
+<body>
+
+<div class="container">
+    <h1>Quản lý Hóa đơn</h1>
+    
+    <!-- Form nhập thông tin hóa đơn -->
+    <form id="hoadonForm" class="form-container">
+        <input type="hidden" id="hoadonMaHD">
+        <div class="form-group">
+            <label for="TienDienInput">Tiền điện:</label>
+            <input type="text" id="TienDienInput" placeholder="Nhập số tiền điện">
+        </div>
+        <div class="form-group">
+            <label for="TienNuocInput">Tiền nước:</label>
+            <input type="text" id="TienNuocInput" placeholder="Nhập số tiền nước">
+        </div>
+        <div class="form-group">
+            <label for="TienMangInput">Tiền mạng:</label>
+            <input type="text" id="TienMangInput" placeholder="Nhập số tiền mạng">
+        </div>
+        <div class="form-group">
+            <label for="ThangInput">Tháng:</label>
+            <input type="text" id="ThangInput" placeholder="Nhập tháng">
+        </div>
+    </form>
+
+    <!-- Nút cập nhật -->
+    <div id="capnhatButtons" class="button-container">
+        <button type="button" id="capnhatBtn">Cập nhật</button>
+    </div>
+
+    <!-- Bảng hiển thị thông tin hóa đơn -->
+    <div class="table-container">
+        <table id="hoadonTable" class="table">
+            <thead>
+                <tr>
+                    <th>Mã hóa đơn</th>
+                    <th>Mã phòng</th>
+                    <th>Tháng</th>
+                    <th>Tiền điện</th>
+                    <th>Tiền nước</th>
+                    <th>Tiền mạng</th>
+                    <th>Tổng tiền</th>
+                    <th>Tình trạng</th>
+                    <th>Actions</th> <!-- Thêm cột Actions -->
+                </tr>
+            </thead>
+            <tbody id="hoadonTableBody">
+                <!-- Dữ liệu hóa đơn sẽ được hiển thị ở đây -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Nút quay lại -->
+    <div id="quaylaiButtons" class="button-container">
+        <button type="button" id="quayLaiBtn">Quay lại</button>
+    </div>
+</div>
+
+<!-- Script JavaScript -->
+<script src="scriptHoadon.js"></script>
+</body>
+</html>

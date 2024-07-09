@@ -1,0 +1,177 @@
+    /* Thiết lập kiểu cho bảng */
+    #studentTable {
+        width: 100%;
+        border-collapse: collapse;
+        /* Loại bỏ đường biên của các ô trong bảng */
+    }
+
+    #student-Table {
+        margin: 0 auto;
+        max-height: 300px;
+        /* Chiều cao tối đa của thẻ div */
+        overflow-y: auto;
+        /* Cho phép thanh cuộn dọc khi nội dung vượt quá chiều cao */
+        position: relative;
+        /* Cho phép vị trí tương đối của con */
+
+    }
+
+    th {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: aqua;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        /* Đảm bảo tiêu đề luôn ở trên cùng */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+
+
+    Định dạng cho thanh cuộn nếu muốn #student-Table::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    #student-Table::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+
+    /* Thiết lập kiểu cho phần tiêu đề phía trên*/
+    #tableHeader {
+        text-align: center;
+        font-size: 30;
+        margin-top: 10px;
+        /* Điều chỉnh khoảng cách từ đỉnh trang */
+        background-color: #4CAF50;
+        /* Màu nền cho tiêu đề */
+        color: white;
+        /* Màu chữ */
+        padding: 10px;
+        /* Điều chỉnh khoảng cách giữa chữ và viền */
+    }
+
+    /* Thiết lập kích thước và kiểu dáng cho chữ  tiêu đề của trang */
+    #tableHeader h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    /* Điều chỉnh kích thước và vị trí của ô tìm kiếm */
+    .search-container {
+        text-align: right;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .search-input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+        vertical-align: top;
+        /* Để giữ nút tìm kiếm ở cùng mức với ô input */
+        font-size: 18px
+    }
+
+    .search-button {
+        padding: 11px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #bd47a2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        vertical-align: top;
+        margin-right: 40px;
+    }
+
+    /* Thiết lập kiểu cho khi nút được nhấn xuống */
+    .search-button:active {
+        background-color: #a1a1a1;
+        color: white;
+    }
+
+    .search-button:hover {
+        background-color: #45a09b;
+
+    }
+
+    /* Thiết lập kiểu cho container chứa các nút */
+    #actionButtons {
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    /* Thiết lập kiểu cho các nút khác */
+    #actionButtons button {
+        cursor: pointer;
+        background-color: #2f9832;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin: 30px;
+    }
+
+    /* Thiết lập kiểu cho khi nút khác được nhấn xuống */
+    #actionButtons button:active {
+        background-color: #a1a1a1;
+        color: white;
+    }
+
+    #actionButtons button:hover {
+        background-color: #44ad49;
+    }
+
+    /* Thiết lập kiểu cho form hiển thị dữ liệu sinh viên */
+    #studentForm {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Chia thành 3 cột có chiều rộng bằng nhau */
+        gap: 15px 10px;
+        /* Khoảng cách giữa các cột (khoảng cách dọc, khoảng cách ngang) */
+        margin-top: 20px;
+        padding: 12px 22px;
+        font-size: 20px;
+        /* Điều chỉnh kích thước của văn bản trong form */
+        justify-items: start;
+        /* Căn các ô item về phía trái */
+    }
+
+    #studentForm div {
+        margin-bottom: 10px;
+        margin-left: 80px;
+    }
+
+    #studentForm label {
+        display: inline-block;
+        width: 120px;
+    }
+
+    #studentForm input {
+        padding: 8px;
+        width: 200px;
+        margin-left: 7px;
+        font-size: 16px;
+    }
+
+    #studentForm select {
+        display: inline;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 8px;
+        width: 220px;
+        margin-left: 10px;
+        /*combo khu */
+        font-size: 16px
+    }

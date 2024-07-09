@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Thiết lập font chữ và margin cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thiết lập background và padding cho container chính */
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Thiết lập kiểu dáng cho ô tìm kiếm */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #0b7dda;
+}
+
+/* Thiết lập kiểu dáng cho bảng */
+.table-container {
+    overflow-x: auto;
+}
+
+#phongTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#phongTable th, #phongTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#phongTable th {
+    background-color: #f2f2f2;
+}
+
+/* Kiểu dáng cho biểu tượng search */
+.fa-search {
+    font-size: 18px;
+}
